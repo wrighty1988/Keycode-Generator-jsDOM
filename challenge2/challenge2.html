@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="challenge2style.css">
+</head>
+<body>
+<h2 id="header">Keycode Generator </h2>
+<p><span>Press any key on the keyboard in the input field to get the Unicode character code and the Unicode key code of the pressed key.</span></p>
+
+<p><span><strong>Note:</strong> The keyCode property does not work on the onkeypress event for non-printable, function keys (like CAPS LOCK, CTRL, ESC, F12, etc.).</span></p>
+
+<input type="text" size="50" onkeypress="uniCharCode(event)" onkeydown="uniKeyCode(event)"> 
+
+<table align="center">
+    <tr>
+      <td>onkeypress</td>
+      <td id="onKeyUpPressText">The Unicode CHARACTER code is:</td>
+      <td id="onKeyUpPressValue">na</td>
+    </tr>
+    <tr>
+      <td>onkeydown</td>
+      <td id="onKeyDownText">The Unicode KEY code is:</td>
+      <td id="onKeyDownPressValue">na</td>
+    </tr>
+  </table>
+
+<script>
+function uniCharCode(event) {
+  var char = event.which || event.keyCode;
+  document.getElementById("onKeyUpPressValue").innerHTML = char;
+}
+
+function uniKeyCode(event) {
+  var key = event.keyCode;
+  document.getElementById("onKeyDownPressValue").innerHTML = key;
+}
+</script>
+
+</body>
+</html>

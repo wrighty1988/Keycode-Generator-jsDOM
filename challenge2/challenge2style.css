@@ -1,0 +1,30 @@
+body{
+    color:white;
+    text-align: center;
+    margin: 50px;
+  
+    font-size: 25px;
+    background-image:url("wolf-2864647__340.webp"); 
+    background-repeat: no-repeat  ;
+    background-size: 100%;
+    background-position: center;
+    
+
+}
+h2{
+    color: blue;
+    font-size: 70px;
+
+    }
+p span{
+    background-color: blue;
+}
+td {
+    padding:10px;
+    border: 1px solid black;
+}
+table {
+
+    margin-top: 20px;
+
+}
